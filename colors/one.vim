@@ -295,7 +295,8 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     let s:mono_1 = ['#abb2bf', '145']
     let s:mono_2 = ['#828997', '102']
     let s:mono_3 = ['#5c6370', '59']
-    let s:mono_4 = ['#4b5263', '59']
+    "let s:mono_4 = ['#4b5263', '59']
+    let s:mono_4 = ['#848383', '59']
 
     let s:hue_1  = ['#56b6c2', '73'] " cyan
     let s:hue_2  = ['#61afef', '75'] " blue
@@ -308,7 +309,8 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     let s:hue_6   = ['#d19a66', '173'] " orange 1
     let s:hue_6_2 = ['#e5c07b', '180'] " orange 2
 
-    let s:syntax_bg     = ['#282c34', '16']
+    "let s:syntax_bg     = ['#282c34', '16']
+    let s:syntax_bg     = ['#000000', '16']
     let s:syntax_gutter = ['#636d83', '60']
     let s:syntax_cursor = ['#2c323c', '16']
 
@@ -385,7 +387,8 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('Whitespace',   s:special_grey,  '',               'none')
   call <sid>X('StatusLine',   s:syntax_fg,     s:syntax_cursor,  'none')
   call <sid>X('StatusLineNC', s:mono_3,        '',               '')
-  call <sid>X('TabLine',      s:mono_2,        s:visual_grey,    'none')
+  "call <sid>X('TabLine',      s:mono_2,        s:visual_grey,    'none')
+  call <sid>X('TabLine',      s:syntax_fg,        s:visual_grey,    'none')
   call <sid>X('TabLineFill',  s:mono_3,        s:visual_grey,    'none')
   call <sid>X('TabLineSel',   s:syntax_bg,     s:hue_2,          '')
   call <sid>X('Title',        s:syntax_fg,     '',               'bold')
