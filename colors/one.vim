@@ -295,7 +295,8 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     "let s:mono_1 = ['#abb2bf', '145']
     let s:mono_1 = ['#bbc1cb', '145']
     let s:mono_2 = ['#828997', '102']
-    let s:mono_3 = ['#5c6370', '59']
+    "let s:mono_3 = ['#5c6370', '59']
+    let s:mono_3 = ['#6c727e', '59']
     "let s:mono_4 = ['#4b5263', '59']
     let s:mono_4 = ['#848383', '59']
 
