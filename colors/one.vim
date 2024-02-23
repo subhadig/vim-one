@@ -698,7 +698,8 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('markdownBold',             s:hue_6,   '', 'bold')
   call <sid>X('markdownItalic',           s:hue_6,   '', 'bold')
   call <sid>X('markdownCode',             s:hue_4,   '', '')
-  "call <sid>X('markdownCodeBlock',        s:hue_5,   '', '')
+  " If the below line causes problems in nested bullets, comment it
+  call <sid>X('markdownCodeBlock',        s:hue_5,   '', '')
   call <sid>X('markdownCodeDelimiter',    s:hue_4,   '', '')
   call <sid>X('markdownHeadingDelimiter', s:hue_5_2, '', '')
   call <sid>X('markdownH1',               s:hue_5,   '', '')
